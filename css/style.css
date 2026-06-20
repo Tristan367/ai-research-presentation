@@ -176,6 +176,10 @@ body { font-family:'Inter',system-ui,-apple-system,sans-serif; background:var(--
 }
 .verdict-no { background:rgba(239,68,68,0.15); color:var(--red); border:1px solid rgba(239,68,68,0.3); }
 .verdict-yes { background:rgba(16,185,129,0.15); color:var(--green); border:1px solid rgba(16,185,129,0.3); }
+.verdict-partial { background:rgba(245,158,11,0.15); color:#f59e0b; border:1px solid rgba(245,158,11,0.3); }
+.source-note { font-size:0.8rem; color:var(--text2); margin-top:1rem; }
+.source-note a { color:var(--accent); text-decoration:none; }
+.source-note a:hover { text-decoration:underline; }
 
 /* PIPELINE */
 .pipeline-diagram {
