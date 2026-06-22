@@ -110,6 +110,14 @@ body { font-family:'Inter',system-ui,-apple-system,sans-serif; background:var(--
 .card p { font-size:0.9rem; color:var(--text2); line-height:1.6; }
 .card-icon { font-size:2rem; margin-bottom:0.75rem; }
 
+/* LESSONS / QA LIST */
+.lessons-list { display:flex; flex-direction:column; gap:1.5rem; }
+.lesson-item { display:grid; grid-template-columns:60px 1fr; gap:1.25rem; align-items:start; background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:1.5rem; transition:all 0.3s ease; }
+.lesson-item:hover { border-color:var(--accent); transform:translateY(-2px); }
+.lesson-number { width:48px; height:48px; border-radius:10px; background:linear-gradient(135deg,var(--accent),var(--accent2)); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:0.9rem; color:#fff; }
+.lesson-content h3 { font-size:1.05rem; color:#fff; margin-bottom:0.4rem; }
+.lesson-content p { font-size:0.9rem; color:var(--text2); line-height:1.6; }
+
 /* CALLOUTS */
 .callout {
   background:rgba(124,58,237,0.08); border-left:4px solid var(--accent);
@@ -239,6 +247,7 @@ body { font-family:'Inter',system-ui,-apple-system,sans-serif; background:var(--
   .hero h1 { font-size:2.2rem; }
   .hero h2 { font-size:1.1rem; }
   .cards-grid, .hardware-cards { grid-template-columns:1fr; }
+  .lesson-item { grid-template-columns:1fr; }
   .side-by-side { grid-template-columns:1fr; }
   .pipeline-diagram { flex-direction:column; }
   .pipeline-arrow { transform:rotate(90deg); }
